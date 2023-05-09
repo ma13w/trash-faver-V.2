@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="game.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body>
+
+    <nav class="navbar navbar-dark" style="background-color: #686868">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Trash Fever</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+              <li class="nav-item">
+                <!--  aria-current="page"  -->
+                <a class="nav-link active" aria-current="page" href="#">Videogame</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div id="progress" onclick="checkBO()">
+        <div id="bar"></div>
+      </div>
+
+    <div class="point" id="pointAll">Point: <span id="point">0</span></div>
+    <div class="write" id="writeAll">
+      <div id="writeTitle" onclick="writeClick()"></div>
+      <div id="writeDesc"></div>
+      <div class="restart" onclick="openClassifica()">CLASSIFICA</div>
+      <div class="restart" onclick="restartGame()">START</div>
+    </div>
+
+    <div class="classifica" id="classificaAll">
+      <div id="classifica"></div>
+    </div>
+    
+    <div class="all">
+        <div class="containerL">
+            <div class="left invisible" id="indf" onclick="cliccamiIndf()">Undf</div>
+            <div class="left" id="carta" onclick="cliccamiCarta()">Paper</div>
+        </div>
+        <div class="center">
+            <img id="img5"></img>
+            <img id="img4"></img>
+            <img id="img3"></img>
+            <img id="img2"></img>
+            <img id="img1"></img>
+            <img id="img0"></img>
+            <img src="image/hole.png" class="attacced" id="hole" onclick="holeClick()"></img>
+            <!-- <div id="progress" onclick="checkBO()">
+                <div id="bar"></div>
+            </div> -->
+            <div class="start" id="start" onclick="startFunction()">Start!</div>
+        </div>
+        <div class="containerR">
+            <div class="right" id="plastica" onclick="cliccamiPlastica()">Plastic</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="game.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+<!-- TODO TOGLIERE BOOTSTRAP CH ENON VA CON FIREBASE E FARE SOLO LA NAVBAR A MANO -->
