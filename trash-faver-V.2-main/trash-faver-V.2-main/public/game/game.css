@@ -1,0 +1,280 @@
+body{
+    height: 100vh;
+    margin: 0;
+    background-color: #868686 !important;
+}
+
+.all{
+    height: 88vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    border-bottom: 16px solid #868686;
+    background-image: url('../game/image/stone.jpg');
+
+}
+
+.right, .left{
+    width: 40px;
+    height: 110px;
+
+    margin-bottom: -3px;
+    margin-left: 4px;
+    margin-right: 4px;
+    padding: 45px;
+
+    background-image: url("../game/image/blue_bid.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: bolder;
+    color: #fff;
+}
+.right > span, .left > span{
+    margin-top: 60px;
+    text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
+    1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+}
+#indf{
+    top: 800px;
+    left: 230px;
+}
+#indf > span{
+    margin-top: 60px;
+}
+.center{
+    width: 150px;
+    height: 100vh;
+
+    background-image: url('../game/image/mariotube1.png');
+    background-repeat: no-repeat;
+
+    /* background-color: #00ae13; */
+
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+}
+.point{
+    font-weight: bolder;
+    position: absolute;
+    top: 150px;
+    left: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #cacaca;
+    box-shadow: 5px 5px 15px 5px #000000;
+}
+#pointAll{
+    font-size: 120%;
+}
+#point{
+    color: red;
+}
+.attacced{
+    background-image: url('../game/image/hole.png');
+    background-repeat: no-repeat;
+
+    margin-bottom: -50px !important;
+    width: 120% !important;
+}
+.center img{
+    margin: 20px 3px;
+    padding: 11px;
+    width: 100%;
+}
+img.cliccatoR{
+    animation-name: moveR;
+    animation-duration: 0.9s;
+}
+img.cliccatoL{
+    animation-name: moveL;
+    animation-duration: 0.9s;
+}
+img.cliccatoS{
+    animation-name: down;
+    animation-duration: 0.9s;
+}
+
+@keyframes moveL {
+    0%  {transform: translate(-120px, -10px);}
+    40% {transform: translate(-120px, 7px);}
+    50% {opacity: 0;}
+}
+@keyframes moveR {
+    0%  {transform: translate(120px, -10px);}
+    60% {transform: translate(120px, 7px);}
+    50% {opacity: 0;}
+}
+
+@keyframes down {
+    0%  {transform: translate(0, 145px);}
+    40% {transform: translate(0, 145px);}
+    50% {opacity: 0;}
+}
+
+.invisible{
+    display: none;
+}
+
+#progress {
+    width: 100%;
+    background-color: #000;
+
+    cursor: pointer;
+
+    position: absolute;
+}
+#bar {
+    width: 100%;
+    height: 17px;
+
+    background-color: rgb(145, 255, 0, 1);
+    color: #000;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.start{
+    padding: 7px 22px;
+    margin-bottom: 20px;
+
+    background-color: red;
+    color: white;
+    border-radius: 30px;
+    font-size: 130%;
+
+    cursor: pointer;
+}
+
+.write{
+    position: absolute;
+
+    top: 300px;
+    left: 50px;
+
+    padding: 42px 73px;
+    margin: 8px;
+
+    background-color: red;
+    border-radius: 15px;
+
+    color: #fff;
+    text-align: center;
+
+    font-weight: bolder;
+    font-size: 200%;
+    font-family: 'JetBrains Mono', monospace;
+
+    display: none;
+}
+#writeDesc{
+    font-size: 70%;
+    font-weight: lighter;
+}
+.restart{
+    margin: 8px;
+    padding: 6px;
+    background-color: black;
+    border-radius: 30px;
+    text-align: center;
+
+    cursor: pointer;
+}
+.restartClassifica{
+    margin: 8px;
+    padding: 6px;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    text-align: center;
+
+    cursor: pointer;
+}
+
+
+.classifica{
+    position: absolute;
+    top: 250px;
+    left: 40px;
+
+    padding: 12px 15px;
+    margin: 8px;
+
+    width: 75%;
+
+    background-color: rgb(145, 255, 0, 1);
+    border-radius: 20px;
+
+    display: none;
+}
+#classifica div{
+    font-size: 90%;
+    font-weight: bolder;
+
+    padding: 12px;
+
+    display: flex;
+    justify-content: space-between;
+}
+.pointP{
+    padding: 3px 12px;
+    background-color: red;
+    color: #fff;
+    border-radius: 30px;
+}
+.name{
+    font-size: 120%;
+    color: #000;
+}
+.you{
+    padding: 3px 12px;
+    background-color: red;
+    color: #fff;
+    border-radius: 30px;
+}
+
+#img0,#img1,#img2,#img3,#img4,#img5{
+    height: 100px;
+    width: auto;
+}
+.succo{
+    height: 150px !important;
+    width: auto;
+}
+.contenitoreP{
+    height: 125px !important;
+    width: auto;
+}
+.sacchettoC{
+    height: 115px !important;
+    width: auto;
+}
+.bottigliaP{
+    height: 155px !important;
+    width: auto;
+}
+.bomboletta{
+    height: 125px !important;
+    width: auto;
+}
+.latta, .latta2{
+    height: 115px !important;
+    width: auto;
+}
+.bottigliaV2, .bottigliaV{
+    height: 130px !important;
+    width: auto;
+}
